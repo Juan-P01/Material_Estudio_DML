@@ -1,13 +1,9 @@
-CREATE DATABASE IF NOT EXISTS Trazabilidad_SGVA;
-
+CREATE DATABASE Trazabilidad_SGVA;
 USE Trazabilidad_SGVA;
 
-DROP TABLE IF EXISTS trazabilidad;
-DROP TABLE IF EXISTS empresa;
-
 CREATE TABLE empresa (
-    codigo_empresa INT AUTO_INCREMENT PRIMARY KEY,
-    nombre_empresa VARCHAR(150) NOT NULL
+    codigo_empresa  INT AUTO_INCREMENT PRIMARY KEY,
+    nombre_empresa  VARCHAR(150) NOT NULL
 );
 
 CREATE TABLE trazabilidad (
